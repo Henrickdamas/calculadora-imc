@@ -11,6 +11,10 @@
   outline: 0;
 }
 
+#resultado {
+  text-align: center;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -31,7 +35,7 @@ body {
 }
 
 .container-form {
-  max-width: 540px;
+  width: 540px;
   background: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -41,9 +45,13 @@ body {
 
 .container-form h1 {
   color: #424040;
+  text-align: center;
+  
 }
+
 .img {
   max-width: 500px;
+  
 }
 
 form input, form label, form button {
@@ -54,8 +62,8 @@ form input, form label, form button {
 
 form input {
   font-size: 24px;
-  height: 50px;
-  padding: 0 20px;
+  height: 60px;
+  padding: 0 30px;
   border: solid 1px #cab2b2;
 }
 
@@ -97,11 +105,49 @@ form button:hover {
 @media (max-width: 860px) {
   .container-pai {
     display: block;
-    margin: 0 auto;
+    
   }
 
+
   .img {
-    width: 300px;
+    display: flex;
+    margin: 0 auto;
+    width: 500px;
     padding-bottom: 20px;
+    justify-content: center;
+    padding-top: 80px;
+  }
+
+  .form1 {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 40px;
+    
+
+  }
+
+  .container-form {
+    width: 700px;
+    
+  }
+
+  form button {
+    height: 60px;
+  }
+
+  form input {
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .img {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 0px;
+
   }
 }
